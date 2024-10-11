@@ -1,0 +1,14 @@
+.about-content-conatiner {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    height: auto;
+    align-items: center
+}
+
+@media (max-width: 700px) {
+    .about-content-conatiner {
+        display: block;
+    }
+
+}

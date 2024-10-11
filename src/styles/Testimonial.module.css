@@ -1,0 +1,12 @@
+.testimonial-container {
+    height: 50svh;
+    width: 100%;
+    background-image: url('../../public/assets/cricket_ground.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: inset 200px 200px 200px 200px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
