@@ -41,7 +41,6 @@ const MainImage: React.CSSProperties = {
 }
 
 const ContentHeading: React.CSSProperties = { fontWeight: '800', fontSize: '1.5rem', fontFamily: 'sans-serif', textTransform: 'uppercase', lineHeight: '2rem', color: 'rgba(0,28,59,255)' }
-const ContentHeadingParagraph: React.CSSProperties = { fontSize: '1rem', margin: '1rem 0', textAlign: 'center' }
 const ContentList: React.CSSProperties = { marginLeft: '1.8rem', color: 'rgba(36,43,46,0.8)'}
 const ContentListSpan: React.CSSProperties = { fontWeight: '700', fontSize: '1.2rem', color: 'rgba(0,28,59,255)'}
 

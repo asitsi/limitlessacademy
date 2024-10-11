@@ -101,29 +101,5 @@ const Data = [
     image: "image3.jpeg",
     category: "CLUB",
     link: "https://asitsi.github.io/HealthHighway/",
-  },
-  {
-    id: 7,
-    image: "img/Online&OfflineCheck.png",
-    category: "JavaScript",
-    link: "https://asitsi.github.io/online-offline-Check/",
-  },
-  {
-    id: 8,
-    image: "img/StarRating.png",
-    category: "Reactjs",
-    link: "https://asitsi.github.io/StarRating/",
-  },
-  {
-    id: 9,
-    image: "img/OneSolutions.png",
-    category: "Reactjs",
-    link: "https://asitsi.github.io/OneSoutions/",
-  },
-  {
-    id: 10,
-    image: "img/CalenderEvent.png",
-    category: "Nextjs",
-    link: "https://github.com/asitsi/nextjsDashboard",
-  },
+  }
 ];
