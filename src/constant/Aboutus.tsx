@@ -25,9 +25,9 @@ const Aboutus = () => {
                         <ol>
                             <li style={ContentList}><span style={ContentListSpan}>Trusted Quality Cricket Gear:</span> Elevate your game with our expertly designed equipment, built for top performance and lasting durability. Experience the difference with gear you can rely on.</li>
                             <li style={ContentList}><span style={ContentListSpan}>Expert Team with a Passion for Cricket:</span> Our dedicated team shares your love for the game. Receive personalized advice and tailored recommendations to meet your specific needs, ensuring you play at your best.</li>
-                            <li style={ContentList}><span style={ContentListSpan}>Cricket Community at VJ Sports:</span> Be part of a vibrant community that shares your passion for cricket. Whether you’re a player, coach, or enthusiast, VJ Sports is your ultimate home ground to celebrate the game.</li>
+                            <li style={ContentList}><span style={ContentListSpan}>Cricket Community at Limit Less Academy:</span> Be part of a vibrant community that shares your passion for cricket. Whether you’re a player, coach, or enthusiast, Limit less academyis your ultimate home ground to celebrate the game.</li>
                         </ol>
-                        <p className='content_paragraph'>At VJ Sports, our commitment goes beyond delivering premium cricket equipment and services. We believe in the power of sports to inspire, transform, and unite. We’ve built a community where players of all levels, from beginners to professionals, receive the support they need to elevate their game and reach new heights.</p>
+                        <p className='content_paragraph'>At Limit Less Academy, our commitment goes beyond delivering premium cricket equipment and services. We believe in the power of sports to inspire, transform, and unite. We’ve built a community where players of all levels, from beginners to professionals, receive the support they need to elevate their game and reach new heights.</p>
                     </div>
                 </div>
             </div>

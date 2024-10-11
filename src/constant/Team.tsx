@@ -7,7 +7,7 @@ const Team = () => {
     <>
       <Heading text={"TEAM"} />
       <div className='container'>
-        <p className='content_paragraph'>Join the winning team at VJ Sports Club, where we believe in playing together and achieving victory as one. Whether you’re a player or enthusiast, our community is built on teamwork, passion, and success. Be part of VJ Sports Club and elevate your game today!</p>
+        <p className='content_paragraph'>Join the winning team at Limit less academy, where we believe in playing together and achieving victory as one. Whether you’re a player or enthusiast, our community is built on teamwork, passion, and success. Be part of Limit less academy and elevate your game today!</p>
         <div style={{ display: 'flex', justifyContent: 'center'}}>
           <div className={styles["team-card"]}>
             <div className={styles["team-card__img"]}>
