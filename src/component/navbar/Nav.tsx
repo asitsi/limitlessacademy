@@ -37,7 +37,7 @@ const Nav: React.FC<ScrollButtonsProps> = ({ componentOneRef, componentTwoRef, c
                   HOME
                 </div>
               </NavbarItem>
-              <NavbarItem isActive >
+              <NavbarItem>
                 <div onClick={() => scrollToComponent(componentTwoRef)}>
                   ABOUT
                 </div>

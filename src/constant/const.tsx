@@ -61,19 +61,19 @@ export const pricing = [
 
 export const FAQ = [
   {
-    title: 'How do I join CrickFitNet Academy Club?',
-    content: 'To join CrickFitNet Academy Club, you can visit our club and follow the registration process. We welcome players of all skill levels and ages.'
+    title: 'How do I join Limit Less Academy Club?',
+    content: 'To join Limit Less Academy Club, you can visit our club and follow the registration process. We welcome players of all skill levels and ages.'
   },
   {
-    title: 'What sports and activities does CrickFitNet Academy Club offer?',
-    content: 'CrickFitNet Academy Club primarily focuses on cricket. We provide coaching, organize tournaments, and offer various cricket-related services.'
+    title: 'What sports and activities does Limit Less Academy Club offer?',
+    content: 'Limit Less Academy Club primarily focuses on cricket. We provide coaching, organize tournaments, and offer various cricket-related services.'
   },
   {
-    title: 'Are there membership fees for CrickFitNet Academy Club?',
+    title: 'Are there membership fees for Limit Less Academy Club?',
     content: 'Yes, we have membership fees for different categories. Please check our Pricing page on the website for detailed information.'
   },
   {
-    title: 'Can I book cricket Grounds/Net through CrickFitNet Academy Club?',
-    content: 'Yes, members have the privilege to book cricket Grounds/Net through CrickFitNet Academy Club. Check our Pricing for Booking Net/Ground, for more details you can contact Mob: +91 99703 91001'
+    title: 'Can I book cricket Grounds/Net through Limit Less Academy Club?',
+    content: 'Yes, members have the privilege to book cricket Grounds/Net through Limit Less Academy Club. Check our Pricing for Booking Net/Ground, for more details you can contact Mob: +91 9673322045'
   },
 ]

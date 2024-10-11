@@ -28,17 +28,17 @@ const Contactus = () => {
               <div className="separator">
                 <hr className="line" />
                 <div className={styles['contact-details']}>
-                  <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap', alignItems: 'center', margin: '2px 0' }}>
-                    <div style={{ backgroundColor: ' #DBD3D8', height: 40, width: 40, borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}><PlaceIcon /></div>
-                    <p>:- Wakad</p>
+                  <div className={styles['contact-details-container']}>
+                    <div className={styles['contact-details-icon-dev']}><PlaceIcon style={{ fontSize: '18px' }}/></div>
+                    <p className={styles['contact-details-text']}>:- Wakad</p>
                   </div>
-                  <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap', alignItems: 'center', margin: '2px 0' }}>
-                  <div style={{ backgroundColor: '#DBD3D8', height: 40, width: 40, borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}><EmailIcon /></div>
-                    <p>:- shaanshaikg09@gmail.com</p>
+                  <div className={styles['contact-details-container']}>
+                  <div className={styles['contact-details-icon-dev']}><EmailIcon style={{ fontSize: '18px' }}/></div>
+                    <p className={styles['contact-details-text']}>:- shaanshaikg09@gmail.com</p>
                   </div>
-                  <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap', alignItems: 'center', margin: '2px 0' }}>
-                  <div style={{ backgroundColor: '#DBD3D8', height: 40, width: 40, borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}><CallIcon /></div>
-                    <p>:- +919673322045</p>
+                  <div className={styles['contact-details-container']}>
+                  <div className={styles['contact-details-icon-dev']}><CallIcon style={{ fontSize: '18px' }}/></div>
+                    <p className={styles['contact-details-text']}>:- +919673322045</p>
                   </div>
                 </div>
                 <hr className="line" />

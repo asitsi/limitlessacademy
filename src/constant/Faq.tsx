@@ -8,8 +8,8 @@ const Faq = () => {
     <>
       <Heading text={"Frequently Asked Questions"} />
       <div className='container'>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-          <div>
+        <div style={{ margin: '1rem 0' }}>
+          <div className='faq-container'>
             {FAQ.map((item, index) => (
               <div key={index}>
                 <CustomAccordion title={item.title} content={item.content} />
