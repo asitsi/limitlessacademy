@@ -70,9 +70,9 @@ const Contactus = () => {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Thank you</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1" style={{ color: 'rgba(36, 43, 46, .8)'}}>Thank you</ModalHeader>
               <ModalBody>
-                <p> 
+                <p style={{ color: 'rgba(36, 43, 46, .8)'}}> 
                   Thank you for connecting with us. Our Team will conntact you soon.
                 </p>
               </ModalBody>
