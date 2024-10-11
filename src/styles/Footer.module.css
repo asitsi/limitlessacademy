@@ -71,6 +71,9 @@
         display: block;
         text-align: center;
     }
+    .footer-container-row-social-media {
+        margin-bottom: 1rem;
+    }
 }
 
 @media (min-width: 1020px) {

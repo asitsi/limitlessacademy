@@ -76,12 +76,4 @@ export const FAQ = [
     title: 'Can I book cricket Grounds/Net through CrickFitNet Academy Club?',
     content: 'Yes, members have the privilege to book cricket Grounds/Net through CrickFitNet Academy Club. Check our Pricing for Booking Net/Ground, for more details you can contact Mob: +91 99703 91001'
   },
-  {
-    title: '',
-    content: ''
-  },
-  {
-    title: '',
-    content: ''
-  }
 ]
