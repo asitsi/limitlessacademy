@@ -81,6 +81,13 @@
     }
 }
 
+.mySwiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 @media (min-width: 1020px) {
     .testimonial-container-content {
         min-height: 42svh;
@@ -132,6 +139,7 @@
     }
 
     .testimonial-container {
-        height: 90svh;
+        height: 100%;
+        padding: 1rem 0;
     };
 }

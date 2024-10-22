@@ -16,7 +16,7 @@ const Team = () => {
               <div className={styles["team-card"]} >
                 {item.name === "SHAAN SHAIKH" ? <span></span> : null}
                 <div className={styles["team-card__img"]}>
-                  <Image src={item.certificateImg} alt='certificate_image' height={200} width={400} isZoomed />
+                  <Image src={item.certificateImg} alt='certificate_image' height={200} width={400} isZoomed className={styles["team-card__img-image"]}/>
                 </div>
                 <div className={styles["team-card__avatar"]}>
                   <Image src={item.image} alt='certificate_image' height={100} width={100} style={{borderRadius: '50%'}}/>

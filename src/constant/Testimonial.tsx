@@ -35,7 +35,7 @@ const Testimonial = () => {
           }}
           // navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
+          className={styles['mySwiper']}
         >
           {TestimonialData.map((item: any, index: number) => {
             return <SwiperSlide style={{ background: 'transparent' }} key={index}>

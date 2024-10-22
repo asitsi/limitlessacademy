@@ -45,7 +45,7 @@ const config: Config = {
             layout: {}, // light theme layout tokens
             colors: {
               background: 'rgba(255, 255, 255, 1)',
-              foreground: "rrgba(36,43,46,0.8)",
+              foreground: "rgba(36,43,46,0.8)",
               primary: {
                 200: 'rgba(15, 127, 254, 0.3)',
                 400: 'rgba(15, 127, 254, 0.5)',
