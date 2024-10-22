@@ -9,6 +9,7 @@
 .contact-details {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap-reverse;
     color: rgba(36, 43, 46, 0.8);
 }
 

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -78,7 +79,7 @@ body {
   font-size: 1rem;
   margin: 1rem 0;
   text-align: center;
-  color: rgba(36,43,46,0.8);
+  /* color: rgba(36,43,46,0.8); */
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
@@ -195,8 +196,10 @@ body {
 
 
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  columns: 3 300px;
+  column-gap: 1em;
   gap: 1rem;
   padding: 1rem;
 }
@@ -205,6 +208,8 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
+  display: block;
+  margin-bottom: 1em;
 }
 
 /* For tablets and smaller devices */

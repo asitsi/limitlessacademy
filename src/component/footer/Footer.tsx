@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className='container'>
                     <div className={styles['footer-container-row']}>
                         <div className={styles['footer-container-row-logo']}>
-                            <Image src='/assets/logo.png' alt='Logo_image' style={{ height: '300px' }} />
+                            <Image src='/assets/main_Logo.png' alt='Logo_image' style={{ height: '300px' }} />
                         </div>
                         <div>
                             <Heading text={"INFORMATION"} />

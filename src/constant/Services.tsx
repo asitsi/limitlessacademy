@@ -10,7 +10,7 @@ const Services = () => {
     <>
       <Heading text={"SERVICES"} />
       <div className='container'>
-        <p className='content_paragraph'>Explore Limit Less Academy’s extensive range of services to enhance your cricketing experience. From high-quality equipment sales to tailored coaching and event management, we offer a complete suite of solutions to meet all your cricket needs. Discover how Limit Less Academy can help you unlock your game’s full potential.</p>
+        <p className='content_paragraph text-foreground'>Explore Limit Less Academy’s extensive range of services to enhance your cricketing experience. From high-quality equipment sales to tailored coaching and event management, we offer a complete suite of solutions to meet all your cricket needs. Discover how Limit Less Academy can help you unlock your game’s full potential.</p>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
           {list.map((item, index) => (
             <div className={styles['content-parent']} key={index}>

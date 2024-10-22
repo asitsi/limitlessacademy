@@ -1,5 +1,5 @@
 .testimonial-container {
-    height: 50svh;
+    height: 60svh;
     width: 100%;
     background-image: url('../../public/assets/cricket_ground.jpg');
     background-repeat: no-repeat;
@@ -9,4 +9,129 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.testimonial-container-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    text-align: center
+}
+
+.testimonial-container-content {
+    width: 70%;
+    min-height: 40svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    opacity: 0.7;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 20px;
+    position: relative;
+}
+
+.testimonial-container-content-header {
+    display: inline-flex;
+    gap: 1rem;
+    margin-bottom: 1rem
+}
+
+.testimonial-container-content-review {
+    font-size: 4rem;
+    transform: scale(-1, 1);
+    color: #1c87c9;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.testimonial-container-content-double-quotes-symbol {
+    position: relative;
+    padding: 10px;
+    font-family: "Georgia", serif;
+    /* font-size: 3.2rem; */
+    font-weight: 500;
+    color: #333;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+
+    &::before,
+    &::after {
+        color: #c6c6c6;
+        font-size: 2.0em;
+        font-weight: 400;
+        line-height: 0.1em;
+    }
+
+    &::before {
+        position: absolute;
+        left: 0;
+        content: open-quote;
+        margin-right: 0.15em;
+        vertical-align: -0.15em;
+    }
+
+    &::after {
+        content: close-quote;
+        vertical-align: -0.7em;
+    }
+}
+
+@media (min-width: 1020px) {
+    .testimonial-container-content {
+        min-height: 42svh;
+    }
+}
+
+@media (min-width: 701px) {
+    .testimonial-container {
+        height: 70svh;
+    }
+
+    .testimonial-container-content {
+        min-height: 50svh;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .testimonial-container-content {
+        width: 100%;
+        min-height: 40svh;
+        padding: 1rem;
+    }
+
+    .testimonial-container {
+        height: 60svh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .testimonial-container-content-headering {
+        margin-top: 5rem;
+    }
+    .testimonial-container-content-header-image {
+        position: absolute;
+        left: 50%;
+    }
+
+    .testimonial-container-content-header {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .testimonial-container-content {
+        width: 100%;
+        min-height: 40svh;
+        padding: 1rem;
+    }
+
+    .testimonial-container {
+        height: 90svh;
+    };
 }

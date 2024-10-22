@@ -11,17 +11,17 @@ const Portfolio = () => {
     <>
       <Heading text={"PORTFOLIO"} />
       <div className='container bg-black'>
-        <p className='content_paragraph text-5xl'>Explore our portfolio of excellence at Limit Less Academy, where your success stories come to life. From budding athletes to seasoned pros, we highlight the achievements and journeys of those who’ve excelled with our support. Discover how we’ve helped elevate cricket careers through dedication, passion, and expertise.</p>
+        <p className='content_paragraph text-5xl text-foreground'>Explore our portfolio of excellence at LimitLess Academy, where your success stories come to life. From budding athletes to seasoned pros, we highlight the achievements and journeys of those who’ve excelled with our support. Discover how we’ve helped elevate cricket careers through dedication, passion, and expertise.</p>
         <div className="image-grid">
           {Data.map((elem, index) => {
-            const { image } = elem;
+            const { image, compImg } = elem;
             return (
               <div key={index}>
                 <Image
                   removeWrapper
                   alt="Card background"
-                  className="z-0 w-[300px] h-[300px] object-cover"
-                  fallbackSrc="https://app.requestly.io/delay/5000/https://nextui.org/images/hero-card-complete.jpeg"
+                  className="z-0 w-[300px] h-[300px] contain"
+                  fallbackSrc={compImg}
                   src={image}
                 />
               </div>
@@ -74,26 +74,31 @@ const Data = [
   {
     id: 1,
     image: "/assets/image1.jpeg",
+    compImg: "/assets/com_image1.jpeg",
     category: "CLUB",
   },
   {
     id: 2,
     image: "/assets/image2.jpeg",
+    compImg: "/assets/com_image1.jpeg",
     category: "SHOP",
   },
   {
     id: 3,
     image: "/assets/image3.jpeg",
+    compImg: "/assets/com_image1.jpeg",
     category: "CLUB",
   },
   {
     id: 4,
     image: "/assets/image4.jpeg",
+    compImg: "/assets/com_image1.jpeg",
     category: "CLUB",
   },
   {
     id: 5,
     image: "/assets/image5.jpeg",
+    compImg: "/assets/com_image1.jpeg",
     category: "CLUB",
   },
   {

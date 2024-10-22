@@ -8,13 +8,13 @@ const Aboutus = () => {
         <>
             <Heading text={"ABOUT US"} />
             <div className='container'>
-                <p className='content_paragraph'>Discover a new way to elevate your cricket game at Limit Less Cricket Academy! Join us on an exciting journey that redefines how you play, compete, and celebrate. Whether you’re a beginner or seasoned player, our expert coaching ensures every match counts. At Limit Less Cricket, we’re committed to fostering talent and passion for the game, helping you reach new heights. Experience a world where cricket isn’t just a sport, but a way of life. Limit Less Cricket Academy – Where Every Game Matters.</p>
+                <p className='content_paragraph text-foreground'>Discover a new way to elevate your cricket game at Limit Less Cricket Academy! Join us on an exciting journey that redefines how you play, compete, and celebrate. Whether you’re a beginner or seasoned player, our expert coaching ensures every match counts. At Limit Less Cricket, we’re committed to fostering talent and passion for the game, helping you reach new heights. Experience a world where cricket isn’t just a sport, but a way of life. Limit Less Cricket Academy – Where Every Game Matters.</p>
                 <div className={styles['about-content-conatiner']}>
                     <div>
                         <Image
                             isZoomed
                             alt="NextUI hero Image"
-                            src="/assets/logo.png"
+                            src="/assets/main_Logo.png"
                             className='main_Image'
                             style={MainImage}
                         />
