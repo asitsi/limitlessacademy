@@ -19,10 +19,16 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { TestimonialData } from './const';
 
 const Testimonial = () => {
+  const getTruncatedText = (text: string, wordLimit: number) => {
+    const words = text.split(' ');
+    if (words.length > wordLimit) {
+      return words.slice(0, wordLimit).join(' ') + '...';
+    }
+    return text; // If less than word limit, return the entire text
+  };
   return (
     <div className={styles['testimonial-container']}>
       <div className='container'>
-        {/* <h1 className={styles['testimonial-container-heading']}>What's are clients say about us</h1> */}
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -41,7 +47,7 @@ const Testimonial = () => {
             return <SwiperSlide style={{ background: 'transparent' }} key={index}>
               <div className={styles['testimonial-container-content']}>
                 <div className={styles['testimonial-container-content-header']}>
-                  <Image src={item.image} alt='testimonial_image' height={80} width={80} className={styles['testimonial-container-content-header-image']}/>
+                  <Image src={item.image} alt='testimonial_image' height={80} width={80} className={styles['testimonial-container-content-header-image']} />
                   <div className={styles['testimonial-container-content-headering']}>
                     <h1 style={{ color: '#000', fontSize: '2rem', fontWeight: 600 }}>{item.name}</h1>
                     {[...Array(item.star)].map((_, i) => (
@@ -49,7 +55,7 @@ const Testimonial = () => {
                     ))}
                   </div>
                 </div>
-                <p style={{ width: '90%' }}><span className={styles['testimonial-container-content-double-quotes-symbol']}> {item.review} </span></p>
+                <p style={{ width: '90%' }}><span className={styles['testimonial-container-content-double-quotes-symbol']}> {getTruncatedText(item.review, 120)} </span></p>
               </div>
             </SwiperSlide>
           })}

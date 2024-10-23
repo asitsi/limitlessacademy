@@ -14,7 +14,7 @@ export default function MobileNav({ scrollToComponent, componentOneRef, componen
             </NavbarBrand>
 
             <NavbarContent className="lg:hidden" justify="end">
-                <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
+                <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="text-foreground"/>
             </NavbarContent>
 
             <NavbarMenu>

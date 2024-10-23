@@ -65,7 +65,7 @@ const Contactus = () => {
             <div className={styles["contact-form"]}>
               <div className="payment--options">
                 <Heading text={"CONTACT US"} />
-                <p className='content_paragraph text-foreground'>Achieve Your Cricket Goals with Us – Contact Limit Less Cricket Academy for Unmatched Support and Service</p>
+                <p className='content_paragraph text-foreground'>Achieve Your Cricket Goals with Us – Contact LimitLess Cricket Academy for Unmatched Support and Service</p>
               </div>
               <div className="separator">
                 <hr className="line" />

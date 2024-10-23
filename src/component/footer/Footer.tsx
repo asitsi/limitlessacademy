@@ -46,6 +46,6 @@ const FooterBottom = () => {
 
     return <div className={styles['footer-strip']}>
         <div>E-WASTE MANAGEMENT | DISCLAIMER</div>
-        <div>COPYRIGHT © {currentYear} LIMIT LESS CRICKET ACADEMY ALL RIGHTS RESERVED.</div>
+        <div>COPYRIGHT © {currentYear} LIMITLESS CRICKET ACADEMY ALL RIGHTS RESERVED.</div>
     </div>
 }

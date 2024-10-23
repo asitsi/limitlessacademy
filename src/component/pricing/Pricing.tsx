@@ -9,7 +9,7 @@ const Pricing = () => {
     <>
       <Heading text={"PRICING"} />
       <div className='container'>
-        <p className='content_paragraph text-foreground'>Experience premium cricket gear and services at unbeatable prices with Limit Less Academy. Our fair pricing ensures you get unmatched quality without compromise, elevating your cricket game beyond expectations. Discover the value of excellence today with our top-tier products and services designed for every cricket enthusiast.</p>
+        <p className='content_paragraph text-foreground'>Experience premium cricket gear and services at unbeatable prices with LimitLess Academy. Our fair pricing ensures you get unmatched quality without compromise, elevating your cricket game beyond expectations. Discover the value of excellence today with our top-tier products and services designed for every cricket enthusiast.</p>
         <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem', margin: "2rem 0" }}>
           {pricing.map((item, index) => (
             <div key={index} className={styles['container']}>

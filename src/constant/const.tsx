@@ -61,20 +61,20 @@ export const pricing = [
 
 export const FAQ = [
   {
-    title: 'How do I join Limit Less Academy Club?',
-    content: 'To join Limit Less Academy Club, you can visit our club and follow the registration process. We welcome players of all skill levels and ages.'
+    title: 'How do I join LimitLess Academy Club?',
+    content: 'To join LimitLess Academy Club, you can visit our club and follow the registration process. We welcome players of all skill levels and ages.'
   },
   {
-    title: 'What sports and activities does Limit Less Academy Club offer?',
-    content: 'Limit Less Academy Club primarily focuses on cricket. We provide coaching, organize tournaments, and offer various cricket-related services.'
+    title: 'What sports and activities does LimitLess Academy Club offer?',
+    content: 'LimitLess Academy Club primarily focuses on cricket. We provide coaching, organize tournaments, and offer various cricket-related services.'
   },
   {
-    title: 'Are there membership fees for Limit Less Academy Club?',
+    title: 'Are there membership fees for LimitLess Academy Club?',
     content: 'Yes, we have membership fees for different categories. Please check our Pricing page on the website for detailed information.'
   },
   {
-    title: 'Can I book cricket Grounds/Net through Limit Less Academy Club?',
-    content: 'Yes, members have the privilege to book cricket Grounds/Net through Limit Less Academy Club. Check our Pricing for Booking Net/Ground, for more details you can contact Mob: +91 9673322045'
+    title: 'Can I book cricket Grounds/Net through LimitLess Academy Club?',
+    content: 'Yes, members have the privilege to book cricket Grounds/Net through LimitLess Academy Club. Check our Pricing for Booking Net/Ground, for more details you can contact Mob: +91 9673322045'
   },
 ];
 
@@ -99,7 +99,7 @@ export const TestimonialData = [
   },
   {
     name: 'Karunashankar Tiwari',
-    review: 'I love that the coach at this accademy focuses on technique and fun equally. At grass root level if the emphasis of a coach is too much on the technique then the kids in the age group of 5-12 quickly loose interest in going to the academy. The drop out rate is higher on this age group. At limitless cricket academy, Shaan ensures that each kid goes back with a smile on his face. He has a day wise plan chalked out which is a combination of fitness, skills and enjoyment while learning. Plenty of match simulation and practice match opportunities for all age groups. Special sessions with guest trainers certified from Mumbai Cricket Association.',
+    review: 'I love that the coach at this accademy focuses on technique and fun equally. At grass root level if the emphasis of a coach is too much on the technique then the kids in the age group of 5-12 quickly loose interest in going to the academy. The drop out rate is higher on this age group. At limitLess cricket academy, Shaan ensures that each kid goes back with a smile on his face. He has a day wise plan chalked out which is a combination of fitness, skills and enjoyment while learning. Plenty of match simulation and practice match opportunities for all age groups. Special sessions with guest trainers certified from Mumbai Cricket Association.',
     star: 5,
     image: '/assets/reviewer4.png'
   },
