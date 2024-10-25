@@ -3,20 +3,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 import { AcmeLogo } from "./AcmeLogo";
 import MobileNav from "./MobileNav";
 import style from '@/styles/Footer.module.css';
-
-interface ScrollButtonsProps {
-  componentOneRef: React.RefObject<HTMLDivElement>;
-  componentTwoRef: React.RefObject<HTMLDivElement>;
-  componentThreeRef: React.RefObject<HTMLDivElement>;
-
-  componentFourRef: React.RefObject<HTMLDivElement>;
-  componentFiveRef: React.RefObject<HTMLDivElement>;
-  componentSexRef: React.RefObject<HTMLDivElement>;
-
-  componentSevenRef: React.RefObject<HTMLDivElement>;
-  componentEightRef: React.RefObject<HTMLDivElement>;
-  componentNineRef: React.RefObject<HTMLDivElement>;
-}
+import { ScrollButtonsProps } from "@/libs/type";
 
 const Nav: React.FC<ScrollButtonsProps> = ({ componentOneRef, componentTwoRef, componentThreeRef, componentFourRef, componentFiveRef, componentSexRef, componentSevenRef, componentEightRef, componentNineRef }) => {
   const scrollToComponent = (ref: React.RefObject<HTMLDivElement>) => {

@@ -21,12 +21,28 @@ const Contactus = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false)
 
-  const scriptUrl = 'https://script.google.com/macros/s/AKfycbxSvxoKnYizA2oiufB8rHOkVjKsfv8kf5j5uLYussW5vkFAN06M277dNIpwJ6VYQrWlrQ/exec';
+  const scriptUrl = 'https://script.google.com/macros/s/AKfycbxcDEDy4LwmJUnh_ko22jxUYlEtGGr6NOlRQe2AxMIoHLo_0lHpNR7v2J1_Fwn4Bf0x/exec';
+
+  const validateForm = () => {
+    if (!form.inputName) return 'Name is required';
+    if (!form.inputEmail) return 'Email is required';
+    if (!form.subject) return 'Subject is required';
+    if (!form.message) return 'Message is required';
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.inputEmail)) return 'Please enter a valid email address';
+
+    return '';
+}
 
   const handleForm = async () => {
-    if (form.inputName && form.inputEmail && form.subject && form.message === '') {
-      return setError('something went wrong')
+    const errorMessage = validateForm();
+    if (errorMessage) {
+        setError(errorMessage);
+        return;
     }
+
     setLoading(true);
 
     const formData = new FormData();
@@ -43,9 +59,9 @@ const Contactus = () => {
         setLoading(false);
         setForm(initialValues);
         onOpen();
-
+        setError("");
       })
-      .catch((err) => setError('something went wrong from the server'));
+      .catch((err) => setError('Something went wrong from the server**'));
   }
 
   const handleInput = (e: any) => {
@@ -89,22 +105,50 @@ const Contactus = () => {
                 <div className={styles["credit-card-info--form-container"]}>
                   <div className={styles["contact-input_container"]}>
                     <label htmlFor="password_field" className={styles["contact-input_label"]}>Full Name</label>
-                    <input id="password_field" className={styles["contact-input_field"]} type="text" name="inputName" title="Input Name" placeholder="Full Name" onChange={(e) => handleInput(e)} />
+                    <input id="password_field" className={styles["contact-input_field"]} style={ error === 'Name is required' ? { border: '1px solid red' } : {} } value={form.inputName} type="text" name="inputName" title="Input Name" placeholder="Full Name*" onChange={(e) => handleInput(e)} />
                   </div>
                   <div className={styles["contact-input_container"]}>
                     <label htmlFor="password_field" className={styles["contact-input_label"]}>Email</label>
-                    <input id="password_field" className={styles["contact-input_field"]} type="text" name="inputEmail" title="enter email" placeholder="Enter Email" onChange={(e) => handleInput(e)} />
+                    <input id="password_field" className={styles["contact-input_field"]} style={ error === 'Email is required' || '' ? { border: '1px solid red' } : {} } value={form.inputEmail} type="text" name="inputEmail" title="enter email" placeholder="Enter Email*" onChange={(e) => handleInput(e)} />
                   </div>
                 </div>
                 <div className={styles["contact-input_container"]}>
                   <label htmlFor="password_field" className={styles["contact-input_label"]}>Subject</label>
-                  <input id="password_field" className={styles["contact-input_field"]} type="text" name="subject" title="Subject" placeholder="Subject" onChange={(e) => handleInput(e)} />
+                  <input id="password_field" className={styles["contact-input_field"]} style={ error === 'Subject is required' || '' ? { border: '1px solid red' } : {} }  value={form.subject} type="text" name="subject" title="Subject" placeholder="Subject*" onChange={(e) => handleInput(e)} />
                   <label htmlFor="password_field" className={styles["contact-input_label"]}>Message</label>
-                  <textarea id="password_field" className={styles["contact-input_field"]} name="message" title="Message" placeholder="Message" onChange={(e) => handleInput(e)} />
+                  <textarea id="password_field" className={styles["contact-input_field"]} style={ error === 'Message is required' || '' ? { border: '1px solid red' } : {} }  value={form.message} name="message" title="Message" placeholder="Message*" onChange={(e) => handleInput(e)} />
                 </div>
               </div>
-              <button className={styles["purchase--btn"]} onClick={handleForm}>Contact Now</button>
-              {error !== '' ? error : null}
+              <Button
+                isLoading={loading}
+                className={styles["purchase--btn"]}
+                spinner={
+                  <svg
+                    className="animate-spin h-5 w-5 text-current"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    />
+                    <path
+                      className="opacity-75"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                }
+                onClick={handleForm}
+              >
+                Contact Now
+              </Button>
+              {error === 'Please enter a valid email address' || 'something went wrong from the server' ? <div style={{ color: 'red', fontSize: '1rem', fontFamily: "Open Sans", fontWeight: '500' }}>{error}</div> : null}
             </div>
           </div>
         </div>
@@ -132,4 +176,5 @@ const Contactus = () => {
   )
 }
 
-export default Contactus
+export default Contactus;
+

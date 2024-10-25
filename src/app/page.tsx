@@ -56,7 +56,7 @@ export default function Home() {
       <div ref={componentNineRef} >
         <Contactus />
       </div>
-      <Footer />
+      <Footer componentOneRef={componentOneRef} componentTwoRef={componentTwoRef} componentThreeRef={componentThreeRef} componentFourRef={componentFourRef} componentFiveRef={componentFiveRef} componentSexRef={componentSexRef} componentSevenRef={componentSevenRef} componentEightRef={componentEightRef} componentNineRef={componentNineRef} />
     </div>
   );
 }

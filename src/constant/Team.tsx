@@ -22,8 +22,8 @@ const Team = () => {
                   <Image src={item.image} alt='certificate_image' height={100} width={100} style={{borderRadius: '50%'}}/>
                 </div>
                 <div className={styles["team-card__title"]}>{item.name}</div>
-                <div className={styles["team-card__subtitle"]}>Cricket Experience: <b>{item.exp}<sup>+</sup></b> years</div>
-                <div className={styles["team-card__subtitle"]}>COACHING Experience: <b>{item.coachExp}<sup>+</sup></b> years </div>
+                <div className={`${styles["team-card__subtitle"]} text-foreground`}>Cricket Experience: <b className='text-foreground-default[900]'>{item.exp}<sup>+</sup></b> years</div>
+                <div className={`${styles["team-card__subtitle"]} text-foreground`}>COACHING Experience: <b>{item.coachExp}<sup>+</sup></b> years </div>
               </div>
             </div>
           })}

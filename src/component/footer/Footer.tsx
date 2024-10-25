@@ -1,9 +1,14 @@
 import React from 'react'
 import Heading from '../heading/Heading'
-import { Image } from '@nextui-org/react'
+import { Image, Link } from '@nextui-org/react'
 import styles from '@/styles/Footer.module.css'
+import { ScrollButtonsProps } from '@/libs/type'
 
-const Footer = () => {
+const Footer: React.FC<ScrollButtonsProps> = ({ componentOneRef, componentTwoRef, componentThreeRef, componentFourRef, componentFiveRef, componentSexRef, componentSevenRef, componentEightRef, componentNineRef }) => {
+    const scrollToComponent = (ref: React.RefObject<HTMLDivElement>) => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <>
             <div className={styles['footer-container']}>
@@ -15,17 +20,27 @@ const Footer = () => {
                         <div>
                             <Heading text={"INFORMATION"} />
                             <ul className={styles['footer-container-row-information']}>
-                                <li>ABOUT</li>
-                                <li>SERVICES</li>
-                                <li>PORTFOLIO</li>
-                                <li>TEAM</li>
-                                <li>PRICING</li>
+                                <li>
+                                    <div onClick={() => scrollToComponent(componentTwoRef)}>ABOUT</div>
+                                </li>
+                                <li>
+                                    <div onClick={() => scrollToComponent(componentThreeRef)}>SERVICES</div>
+                                </li>
+                                <li>
+                                    <div onClick={() => scrollToComponent(componentFourRef)}>PORTFOLIO</div>
+                                </li>
+                                <li>
+                                    <div onClick={() => scrollToComponent(componentSexRef)}>TEAM</div>
+                                </li>
+                                <li>
+                                    <div onClick={() => scrollToComponent(componentSevenRef)}>PRICING</div>
+                                </li>
                             </ul>
                         </div>
                         <div>
                             <Heading text={"SOCIAL MEDIA"} />
                             <ul className={styles['footer-container-row-social-media']}>
-                                <li><Image src='/assets/insta.svg' alt='Logo_image' style={{ height: '40px' }} /></li>
+                                <li><Link href="https://www.instagram.com/limitlesssports2024?igsh=MWc0ZW5wcWhicThleg==" target='_blank'><Image src='/assets/insta.svg' alt='Logo_image' style={{ height: '40px' }} /></Link></li>
                                 <li><Image src='/assets/facebook.svg' alt='Logo_image' style={{ height: '40px' }} /></li>
                                 <li><Image src='/assets/youtube.svg' alt='Logo_image' style={{ height: '40px' }} /></li>
                             </ul>
