@@ -81,22 +81,22 @@ const Contactus = () => {
             <div className={styles["contact-form"]}>
               <div className="payment--options">
                 <Heading text={"CONTACT US"} />
-                <p className='content_paragraph text-foreground'>Achieve Your Cricket Goals with Us – Contact LimitLess Cricket Academy for Unmatched Support and Service</p>
+                <p className='content_paragraph text-foreground'>Achieve Your Cricket Goals with Us – Contact Limitless Cricket Academy for Unmatched Support and Service</p>
               </div>
               <div className="separator">
                 <hr className="line" />
                 <div className={styles['contact-details']}>
                   <div className={styles['contact-details-container']}>
                     <div className={styles['contact-details-icon-dev']}><PlaceIcon style={{ fontSize: '18px' }} /></div>
-                    <p className={styles['contact-details-text']}>:- Ground Zero, near Kidzee School, Vishnu Dev Nagar, Wakad, Pune, Pimpri-Chinchwad, Maharashtra 411057</p>
+                    <p className={styles['contact-details-text']}>:- Available at Wakad, Rhatni, Hinjewadi phase 3 Pune, Maharashtra 411057</p>
                   </div>
                   <div className={styles['contact-details-container']}>
                     <div className={styles['contact-details-icon-dev']}><EmailIcon style={{ fontSize: '18px' }} /></div>
-                    <p className={styles['contact-details-text']}>:- shaanshaikg09@gmail.com</p>
+                    <p className={styles['contact-details-text']}>:- limitless.cricket2024@gmail.com</p>
                   </div>
                   <div className={styles['contact-details-container']}>
                     <div className={styles['contact-details-icon-dev']}><CallIcon style={{ fontSize: '18px' }} /></div>
-                    <p className={styles['contact-details-text']}>:- +919673322045</p>
+                    <p className={styles['contact-details-text']}>:- +91-9226173423</p>
                   </div>
                 </div>
                 <hr className="line" />
@@ -105,18 +105,18 @@ const Contactus = () => {
                 <div className={styles["credit-card-info--form-container"]}>
                   <div className={styles["contact-input_container"]}>
                     <label htmlFor="password_field" className={styles["contact-input_label"]}>Full Name</label>
-                    <input id="password_field" className={styles["contact-input_field"]} style={ error === 'Name is required' ? { border: '1px solid red' } : {} } value={form.inputName} type="text" name="inputName" title="Input Name" placeholder="Full Name*" onChange={(e) => handleInput(e)} />
+                    <input id="password_field" className={`${styles["contact-input_field"]} text-foreground`} style={ error === 'Name is required' ? { border: '1px solid red' } : {} } value={form.inputName} type="text" name="inputName" title="Input Name" placeholder="Full Name*" onChange={(e) => handleInput(e)} />
                   </div>
                   <div className={styles["contact-input_container"]}>
                     <label htmlFor="password_field" className={styles["contact-input_label"]}>Email</label>
-                    <input id="password_field" className={styles["contact-input_field"]} style={ error === 'Email is required' || '' ? { border: '1px solid red' } : {} } value={form.inputEmail} type="text" name="inputEmail" title="enter email" placeholder="Enter Email*" onChange={(e) => handleInput(e)} />
+                    <input id="password_field" className={`${styles["contact-input_field"]} text-foreground`} style={ error === 'Email is required' || '' ? { border: '1px solid red' } : {} } value={form.inputEmail} type="text" name="inputEmail" title="enter email" placeholder="Enter Email*" onChange={(e) => handleInput(e)} />
                   </div>
                 </div>
                 <div className={styles["contact-input_container"]}>
                   <label htmlFor="password_field" className={styles["contact-input_label"]}>Subject</label>
-                  <input id="password_field" className={styles["contact-input_field"]} style={ error === 'Subject is required' || '' ? { border: '1px solid red' } : {} }  value={form.subject} type="text" name="subject" title="Subject" placeholder="Subject*" onChange={(e) => handleInput(e)} />
+                  <input id="password_field" className={`${styles["contact-input_field"]} text-foreground`} style={ error === 'Subject is required' || '' ? { border: '1px solid red' } : {} }  value={form.subject} type="text" name="subject" title="Subject" placeholder="Subject*" onChange={(e) => handleInput(e)} />
                   <label htmlFor="password_field" className={styles["contact-input_label"]}>Message</label>
-                  <textarea id="password_field" className={styles["contact-input_field"]} style={ error === 'Message is required' || '' ? { border: '1px solid red' } : {} }  value={form.message} name="message" title="Message" placeholder="Message*" onChange={(e) => handleInput(e)} />
+                  <textarea id="password_field" className={`${styles["contact-input_field"]} text-foreground`} style={ error === 'Message is required' || '' ? { border: '1px solid red' } : {} }  value={form.message} name="message" title="Message" placeholder="Message*" onChange={(e) => handleInput(e)} />
                 </div>
               </div>
               <Button

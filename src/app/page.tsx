@@ -11,6 +11,7 @@ import Pricing from '@/component/pricing/Pricing';
 import Faq from '@/constant/Faq';
 import Footer from '@/component/footer/Footer';
 import Contactus from '@/component/contact/Contactus';
+import OurVision from '@/component/ourVision/OurVision';
 
 export default function Home() {
   // Create refs for each component
@@ -35,6 +36,9 @@ export default function Home() {
       <div ref={componentTwoRef}>
         <Aboutus />
       </div>
+      <div>
+        <OurVision />
+      </div>
       <div ref={componentThreeRef}>
         <Services />
       </div>
@@ -47,9 +51,9 @@ export default function Home() {
       <div ref={componentSexRef}>
         <Team />
       </div>
-      <div ref={componentSevenRef}>
+      {/* <div ref={componentSevenRef}>
         <Pricing />
-      </div>
+      </div> */}
       <div ref={componentEightRef}>
         <Faq />
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import { Navbar, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarBrand } from "@nextui-org/react";
-import Link from "next/link";
 import { AcmeLogo } from "./AcmeLogo";
 
 export default function MobileNav({ scrollToComponent, componentOneRef, componentTwoRef, componentThreeRef, componentFourRef, componentFiveRef, componentSexRef, componentSevenRef, componentEightRef, componentNineRef }: any) {
@@ -8,7 +7,7 @@ export default function MobileNav({ scrollToComponent, componentOneRef, componen
     const [active, setActive] = React.useState('');
 
     return (
-        <Navbar position="sticky" disableAnimation isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} isBordered className="lg:hidden bg-transparent backdrop-saturate-none data-[menu-open=true]:backdrop-filter-none backdrop-filter-none" >
+        <Navbar position="sticky" disableAnimation isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} isBordered className="lg:hidden bg-transparent backdrop-saturate-none data-[menu-open=true]:backdrop-filter-none backdrop-filter-none top-0 z-50 text-foreground" >
             <NavbarBrand>
                 <AcmeLogo />
             </NavbarBrand>
@@ -40,15 +39,15 @@ export default function MobileNav({ scrollToComponent, componentOneRef, componen
                     </div>
                 </NavbarMenuItem>
                 <NavbarMenuItem>
-                    <div onClick={() => {scrollToComponent(componentFiveRef); setIsMenuOpen(!isMenuOpen)}}>
+                    <div onClick={() => {scrollToComponent(componentSexRef); setIsMenuOpen(!isMenuOpen)}}>
                         TEAM
                     </div>
                 </NavbarMenuItem>
-                <NavbarMenuItem>
-                    <div onClick={() => {scrollToComponent(componentSexRef); setIsMenuOpen(!isMenuOpen)}}>
+                {/* <NavbarMenuItem>
+                    <div onClick={() => {scrollToComponent(componentSevenRef); setIsMenuOpen(!isMenuOpen)}}>
                         PRICING
                     </div>
-                </NavbarMenuItem>
+                </NavbarMenuItem> */}
                 <NavbarMenuItem>
                     <div onClick={() => {scrollToComponent(componentNineRef); setIsMenuOpen(!isMenuOpen)}}>
                         CONTACT

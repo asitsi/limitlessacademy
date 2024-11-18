@@ -61,20 +61,20 @@ export const pricing = [
 
 export const FAQ = [
   {
-    title: 'How do I join LimitLess Academy Club?',
-    content: 'To join LimitLess Academy Club, you can visit our club and follow the registration process. We welcome players of all skill levels and ages.'
+    title: 'How do I join Limitless Cricket Academy Club?',
+    content: 'To join Limitless Cricket Academy Club, you can visit our club and follow the registration process. We welcome players of all skill levels and ages.'
   },
   {
-    title: 'What sports and activities does LimitLess Academy Club offer?',
-    content: 'LimitLess Academy Club primarily focuses on cricket. We provide coaching, organize tournaments, and offer various cricket-related services.'
+    title: 'What sports and activities does Limitless Cricket Academy Club offer?',
+    content: 'Limitless Cricket Academy Club primarily focuses on cricket. We provide coaching, organize tournaments, and offer various cricket-related services.'
   },
   {
-    title: 'Are there membership fees for LimitLess Academy Club?',
+    title: 'Are there membership fees for Limitless Cricket Academy Club?',
     content: 'Yes, we have membership fees for different categories. Please check our Pricing page on the website for detailed information.'
   },
   {
-    title: 'Can I book cricket Grounds/Net through LimitLess Academy Club?',
-    content: 'Yes, members have the privilege to book cricket Grounds/Net through LimitLess Academy Club. Check our Pricing for Booking Net/Ground, for more details you can contact Mob: +91 9673322045'
+    title: 'Can I book cricket Grounds/Net through Limitless Cricket Academy Club?',
+    content: 'Yes, members have the privilege to book cricket Grounds/Net through Limitless Cricket Academy Club. Check our Pricing for Booking Net/Ground, for more details you can contact Mob: +91-9226173423'
   },
 ];
 

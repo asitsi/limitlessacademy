@@ -44,11 +44,11 @@ const Nav: React.FC<ScrollButtonsProps> = ({ componentOneRef, componentTwoRef, c
                   TEAM
                 </div>
               </NavbarItem>
-              <NavbarItem>
+              {/* <NavbarItem>
                 <div onClick={() => scrollToComponent(componentSevenRef)}>
                   PRICING
                 </div>
-              </NavbarItem>
+              </NavbarItem> */}
               <NavbarItem>
                 <div onClick={() => scrollToComponent(componentEightRef)}>
                   CONTACT

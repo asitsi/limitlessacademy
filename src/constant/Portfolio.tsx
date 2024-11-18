@@ -11,7 +11,7 @@ const Portfolio = () => {
     <>
       <Heading text={"PORTFOLIO"} />
       <div className='container bg-black'>
-        <p className='content_paragraph text-5xl text-foreground'>Explore our portfolio of excellence at LimitLess Academy, where your success stories come to life. From budding athletes to seasoned pros, we highlight the achievements and journeys of those who’ve excelled with our support. Discover how we’ve helped elevate cricket careers through dedication, passion, and expertise.</p>
+        <p className='content_paragraph text-5xl text-foreground'>Explore our portfolio of excellence at Limitless Cricket Academy, where your success stories come to life. From budding athletes to seasoned pros, we highlight the achievements and journeys of those who’ve excelled with our support. Discover how we’ve helped elevate cricket careers through dedication, passion, and expertise.</p>
         <div className="image-grid">
           {Data.map((elem, index) => {
             const { image, compImg } = elem;
