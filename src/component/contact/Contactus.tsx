@@ -87,16 +87,16 @@ const Contactus = () => {
                 <hr className="line" />
                 <div className={styles['contact-details']}>
                   <div className={styles['contact-details-container']}>
-                    <div className={styles['contact-details-icon-dev']}><PlaceIcon style={{ fontSize: '18px' }} /></div>
-                    <p className={styles['contact-details-text']}>:- Available at Wakad, Rhatni, Hinjewadi phase 3 Pune, Maharashtra 411057</p>
-                  </div>
-                  <div className={styles['contact-details-container']}>
                     <div className={styles['contact-details-icon-dev']}><EmailIcon style={{ fontSize: '18px' }} /></div>
                     <p className={styles['contact-details-text']}>:- limitless.cricket2024@gmail.com</p>
                   </div>
                   <div className={styles['contact-details-container']}>
                     <div className={styles['contact-details-icon-dev']}><CallIcon style={{ fontSize: '18px' }} /></div>
                     <p className={styles['contact-details-text']}>:- +91-9226173423</p>
+                  </div>
+                  <div className={styles['contact-details-container']}>
+                    <div className={styles['contact-details-icon-dev']}><PlaceIcon style={{ fontSize: '18px' }} /></div>
+                    <p className={styles['contact-details-text']}>:- Available at Wakad, Rhatni, Hinjewadi phase 3 Pune, Maharashtra 411057</p>
                   </div>
                 </div>
                 <hr className="line" />
