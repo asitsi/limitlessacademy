@@ -40,7 +40,7 @@ const Footer: React.FC<ScrollButtonsProps> = ({ componentOneRef, componentTwoRef
                         <div>
                             <Heading text={"SOCIAL MEDIA"} />
                             <ul className={styles['footer-container-row-social-media']}>
-                                <li><Link href="https://www.instagram.com/limitlesssports2024?igsh=MWc0ZW5wcWhicThleg==" target='_blank'><Image src='/assets/insta.svg' alt='Logo_image' style={{ height: '40px' }} /></Link></li>
+                                <li><Link href="https://www.instagram.com/limitlesscricketacademy2024?utm_source=qr&igsh=MWc0ZW5wcWhicThleg==" target='_blank'><Image src='/assets/insta.svg' alt='Logo_image' style={{ height: '40px' }} /></Link></li>
                                 <li><Image src='/assets/facebook.svg' alt='Logo_image' style={{ height: '40px' }} /></li>
                                 <li><Image src='/assets/youtube.svg' alt='Logo_image' style={{ height: '40px' }} /></li>
                             </ul>
