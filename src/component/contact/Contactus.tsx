@@ -55,7 +55,6 @@ const Contactus = () => {
       method: "POST", body: formData
     })
       .then((res) => {
-        console.log("SUCCESSFULLY SUBMITTED");
         setLoading(false);
         setForm(initialValues);
         onOpen();
