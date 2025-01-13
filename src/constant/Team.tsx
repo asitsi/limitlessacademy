@@ -10,7 +10,7 @@ const Team = () => {
       <Heading text={"TEAM"} />
       <div className='container'>
         <p className='content_paragraph text-foreground'>Join the winning team at Limitless Cricket Academy, where we believe in playing together and achieving victory as one. Whether you’re a player or enthusiast, our community is built on teamwork, passion, and success. Be part of Limitless Cricket Academy and elevate your game today!</p>
-        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+        <div className='flex justify-center flex-wrap gap-4'>
           {TeamData.map((item, index) => {
             return <div key={index}>
               <div className={styles["team-card"]} >
@@ -19,7 +19,7 @@ const Team = () => {
                   <Image src={item.certificateImg} alt='certificate_image' height={200} width={400} isZoomed className={styles["team-card__img-image"]}/>
                 </div>
                 <div className={styles["team-card__avatar"]}>
-                  <Image src={item.image} alt='certificate_image' height={100} width={100} style={{borderRadius: '50%'}}/>
+                  <Image src={item.image} alt='certificate_image' height={100} width={100} className='rounded-full'/>
                 </div>
                 <div className={styles["team-card__title"]}>{item.name}</div>
                 <div className={`${styles["team-card__subtitle"]} text-foreground`}>Cricket Experience: <b className='text-foreground-default[900]'>{item.exp}<sup>+</sup></b> years</div>

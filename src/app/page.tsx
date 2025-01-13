@@ -28,7 +28,7 @@ export default function Home() {
   const componentNineRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div style={{ backgroundColor: '#EFF1F3' }}>
+    <div className='bg-[#EFF1F3]'>
       <Nav componentOneRef={componentOneRef} componentTwoRef={componentTwoRef} componentThreeRef={componentThreeRef} componentFourRef={componentFourRef} componentFiveRef={componentFiveRef} componentSexRef={componentSexRef} componentSevenRef={componentSevenRef} componentEightRef={componentEightRef} componentNineRef={componentNineRef} />
       <div ref={componentOneRef}>
         <MainHeader />

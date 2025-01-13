@@ -1,3 +1,10 @@
+.contact-modal-wrap {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    height: 100%;
+    margin-top: 1rem
+}
 .contact-modal {
     width: calc(100% - 200px);
     height: fit-content;

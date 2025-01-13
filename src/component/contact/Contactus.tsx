@@ -75,7 +75,7 @@ const Contactus = () => {
   return (
     <>
       <div className='container'>
-        <div style={{ display: 'flex', justifyContent: 'center', height: '100%', alignItems: 'center' }}>
+        <div className={styles["contact-modal-wrap"]}>
           <div className={styles["contact-modal"]}>
             <div className={styles["contact-form"]}>
               <div className="payment--options">
@@ -86,15 +86,15 @@ const Contactus = () => {
                 <hr className="line" />
                 <div className={styles['contact-details']}>
                   <div className={styles['contact-details-container']}>
-                    <div className={styles['contact-details-icon-dev']}><EmailIcon style={{ fontSize: '18px' }} /></div>
+                    <div className={styles['contact-details-icon-dev']}><EmailIcon className='text-base' /></div>
                     <p className={styles['contact-details-text']}>:- limitless.cricket2024@gmail.com</p>
                   </div>
                   <div className={styles['contact-details-container']}>
-                    <div className={styles['contact-details-icon-dev']}><CallIcon style={{ fontSize: '18px' }} /></div>
+                    <div className={styles['contact-details-icon-dev']}><CallIcon className='text-base' /></div>
                     <p className={styles['contact-details-text']}>:- +91-9226173423</p>
                   </div>
                   <div className={styles['contact-details-container']}>
-                    <div className={styles['contact-details-icon-dev']}><PlaceIcon style={{ fontSize: '18px' }} /></div>
+                    <div className={styles['contact-details-icon-dev']}><PlaceIcon className='text-base' /></div>
                     <p className={styles['contact-details-text']}>:- Available at Wakad, Rhatni, Hinjewadi phase 3 Pune, Maharashtra 411057</p>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ const Contactus = () => {
               >
                 Contact Now
               </Button>
-              {error === 'Please enter a valid email address' || 'something went wrong from the server' ? <div style={{ color: 'red', fontSize: '1rem', fontFamily: "Open Sans", fontWeight: '500' }}>{error}</div> : null}
+              {error === 'Please enter a valid email address' || 'something went wrong from the server' ? <div className="text-red-500 text-base font-open-sans font-medium">{error}</div> : null}
             </div>
           </div>
         </div>
@@ -156,9 +156,9 @@ const Contactus = () => {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1" style={{ color: 'rgba(36, 43, 46, .8)' }}>Thank you</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1 text-[rgba(36,43,46,.8)]">Thank you</ModalHeader>
               <ModalBody>
-                <p style={{ color: 'rgba(36, 43, 46, .8)' }}>
+                <p className="text-[rgba(36,43,46,.8)]">
                   Thank you for connecting with us. Our Team will conntact you soon.
                 </p>
               </ModalBody>

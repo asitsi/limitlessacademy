@@ -73,7 +73,21 @@ const config: Config = {
               },
               danger: {
                 200: 'rgb(255, 8, 78)'
-              }
+              },
+              warning: {
+                50: '#FFF5CD',
+                100: '#FFF5CD',
+                200: '#FFE99B',
+                300: '#FFD96A',
+                400: '#FFC945',
+                500: '#FFB007',
+                600: '#DB9005',
+                700: '#B77203',
+                800: '#935702',
+                900: '#7A4301',
+                DEFAULT: '#7A4301',
+                foreground: '#FFF5CD',
+            },
             } // light theme colors
           },
         dark: {
@@ -100,7 +114,21 @@ const config: Config = {
             },
             danger: {
               200: 'rgb(255, 8, 78)'
-            }
+            },
+            warning: {
+              50: '#551F00',
+              100: '#551F00',
+              200: '#672A00',
+              300: '#803A00',
+              400: '#994D00',
+              500: '#B26201',
+              600: '#D09135',
+              700: '#E7B55D',
+              800: '#F7D894',
+              900: '#FBEDC9',
+              DEFAULT: '#FBEDC9',
+              foreground: '#551F00',
+          },
           } // dark theme colors
         }, // light theme colors
       },

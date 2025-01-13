@@ -15,7 +15,7 @@ const Footer: React.FC<ScrollButtonsProps> = ({ componentOneRef, componentTwoRef
                 <div className='container'>
                     <div className={styles['footer-container-row']}>
                         <div className={styles['footer-container-row-logo']}>
-                            <Image src='/assets/main_Logo.png' alt='Logo_image' style={{ height: '300px' }} />
+                            <Image src='/assets/main_Logo.png' alt='Logo_image' height={340} className='h-[100px] w-[100px]'/>
                         </div>
                         <div>
                             <Heading text={"INFORMATION"} />
@@ -40,9 +40,17 @@ const Footer: React.FC<ScrollButtonsProps> = ({ componentOneRef, componentTwoRef
                         <div>
                             <Heading text={"SOCIAL MEDIA"} />
                             <ul className={styles['footer-container-row-social-media']}>
-                                <li><Link href="https://www.instagram.com/limitlesscricketacademy2024?utm_source=qr&igsh=MWc0ZW5wcWhicThleg==" target='_blank'><Image src='/assets/insta.svg' alt='Logo_image' style={{ height: '40px' }} /></Link></li>
-                                <li><Image src='/assets/facebook.svg' alt='Logo_image' style={{ height: '40px' }} /></li>
-                                <li><Image src='/assets/youtube.svg' alt='Logo_image' style={{ height: '40px' }} /></li>
+                                <li>
+                                    <Link href="https://www.instagram.com/limitlesscricketacademy2024?utm_source=qr&igsh=MWc0ZW5wcWhicThleg==" target='_blank'>
+                                        <Image src='/assets/insta.svg' alt='Logo_image' height={40} />
+                                    </Link>
+                                </li>
+                                <li><Image src='/assets/facebook.svg' alt='Logo_image' height={40}/></li>
+                                <li>
+                                    <Link href="https://youtube.com/@limitlesscricketacademy?si=S0scoNF6UAlgdvii" target='_blank'>
+                                        <Image src='/assets/youtube.svg' alt='Logo_image' height={40} />
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>

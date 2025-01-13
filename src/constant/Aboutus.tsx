@@ -15,17 +15,16 @@ const Aboutus = () => {
                             isZoomed
                             alt="NextUI hero Image"
                             src="/assets/main_Logo.png"
-                            className='main_Image'
-                            style={MainImage}
+                            className='main_Image h-full w-full'
                         />
                     </div>
                     <div>
-                        <h1 style={ContentHeading}>Unleashing Sports Excellence: <span>Passion, Dedication, and the Spirit of the Game</span></h1>
+                        <h2 className={styles['about-content-conatiner-text']}>Unleashing Sports Excellence: <span>Passion, Dedication, and the Spirit of the Game</span></h2>
                         <p className='content_paragraph text-foreground'>At Limitless Cricket Academy, we bring the spirit of cricket to life. Founded on a deep passion for the game and a commitment to excellence, we’ve grown into a leading hub for aspiring athletes and enthusiasts. Our mission is to empower cricketers at every level, offering expert training and fostering a love for the sport. Join Limitless Cricket Academy, where passion and excellence meet to inspire the next generation of cricket champions.</p>
                         <ol>
-                            <li className={styles['ContentList']} style={ContentList}><span className={styles['ContentListSpan']}>Trusted Quality Cricket Gear:</span> Elevate your game with our expertly designed equipment, built for top performance and lasting durability. Experience the difference with gear you can rely on.</li>
-                            <li className={styles['ContentList']} style={ContentList}><span className={styles['ContentListSpan']}>Expert Team with a Passion for Cricket:</span> Our dedicated team shares your love for the game. Receive personalized advice and tailored recommendations to meet your specific needs, ensuring you play at your best.</li>
-                            <li className={styles['ContentList']} style={ContentList}><span className={styles['ContentListSpan']}>Cricket Community at Limitless Cricket Academy:</span> Be part of a vibrant community that shares your passion for cricket. Whether you’re a player, coach, or enthusiast, Limitless Cricket Academyis your ultimate home ground to celebrate the game.</li>
+                            <li className={`${styles['ContentList']} ml-[1.8rem] text-[rgba(36,43,46,0.8)]`}><span className={styles['ContentListSpan']}>Trusted Quality Cricket Gear:</span> Elevate your game with our expertly designed equipment, built for top performance and lasting durability. Experience the difference with gear you can rely on.</li>
+                            <li className={`${styles['ContentList']} ml-[1.8rem] text-[rgba(36,43,46,0.8)]`}><span className={styles['ContentListSpan']}>Expert Team with a Passion for Cricket:</span> Our dedicated team shares your love for the game. Receive personalized advice and tailored recommendations to meet your specific needs, ensuring you play at your best.</li>
+                            <li className={`${styles['ContentList']} ml-[1.8rem] text-[rgba(36,43,46,0.8)]`}><span className={styles['ContentListSpan']}>Cricket Community at Limitless Cricket Academy:</span> Be part of a vibrant community that shares your passion for cricket. Whether you’re a player, coach, or enthusiast, Limitless Cricket Academyis your ultimate home ground to celebrate the game.</li>
                         </ol>
                         <p className='content_paragraph text-foreground'>At Limitless Cricket Academy, our commitment goes beyond delivering premium cricket equipment and services. We believe in the power of sports to inspire, transform, and unite. We’ve built a community where players of all levels, from beginners to professionals, receive the support they need to elevate their game and reach new heights.</p>
                     </div>
@@ -34,13 +33,5 @@ const Aboutus = () => {
         </>
     )
 }
-
-const MainImage: React.CSSProperties = {
-    height: '100%',
-    width: '100%'
-}
-
-const ContentHeading: React.CSSProperties = { fontWeight: '800', fontSize: '1.5rem', fontFamily: 'sans-serif', textTransform: 'uppercase', lineHeight: '2rem', color: 'rgba(0,28,59,255)' }
-const ContentList: React.CSSProperties = { marginLeft: '1.8rem', color: 'rgba(36,43,46,0.8)'}
 
 export default Aboutus
