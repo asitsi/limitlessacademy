@@ -18,11 +18,13 @@ const Portfolio = () => {
             return (
               <div key={index}>
                 <Image
-                  removeWrapper
                   alt="Card background"
-                  className="z-0 w-[300px] h-[300px] contain"
+                  className="z-0 w-[100%] !h-[400px] contain"
                   fallbackSrc={compImg}
                   src={image}
+                  height={1440}
+                  width={1080}
+                  style={{height: '600px', width: '100%'}}
                 />
               </div>
             )
@@ -73,38 +75,32 @@ const Galery = () => {
 const Data = [
   {
     id: 1,
-    image: "/assets/image1.jpeg",
-    compImg: "/assets/com_image1.jpeg",
+    image: "/assets/image1.webp",
+    compImg: "/assets/com_image1.webp",
     category: "CLUB",
   },
   {
     id: 2,
-    image: "/assets/image2.jpeg",
-    compImg: "/assets/com_image1.jpeg",
+    image: "/assets/image2.webp",
+    compImg: "/assets/com_image1.webp",
     category: "SHOP",
   },
   {
     id: 3,
-    image: "/assets/image3.jpeg",
-    compImg: "/assets/com_image1.jpeg",
+    image: "/assets/image3.webp",
+    compImg: "/assets/com_image1.webp",
     category: "CLUB",
   },
   {
     id: 4,
-    image: "/assets/image4.jpeg",
-    compImg: "/assets/com_image1.jpeg",
+    image: "/assets/image4.webp",
+    compImg: "/assets/com_image1.webp",
     category: "CLUB",
   },
   {
     id: 5,
-    image: "/assets/image5.jpeg",
-    compImg: "/assets/com_image1.jpeg",
+    image: "/assets/image5.webp",
+    compImg: "/assets/com_image1.webp",
     category: "CLUB",
   },
-  {
-    id: 6,
-    image: "image3.jpeg",
-    category: "CLUB",
-    link: "https://asitsi.github.io/HealthHighway/",
-  }
 ];

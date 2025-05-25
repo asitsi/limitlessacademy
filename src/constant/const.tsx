@@ -83,36 +83,36 @@ export const TestimonialData = [
     name: 'Ajit Shinde',
     review: 'Shaan…! The coach who trained me and was with me , for a Journey ,  from holding a Cricket Bat to participate in Cricket matches…. And the journey still continues……That too, within a month,  with full enthusiasm and being a mentor, physically and mentally…Thank U for being such a Guru in Cricket.Feel unlucky as I can’t put my kids under Your mentorship as being relocated , far away from You…My Best wishes are always with You and Your academy… All the very best for You and Your little Champs..! Go Limitlesss…!!',
     star: 5,
-    image: '/assets/reviewer1.png'
+    image: '/assets/reviewer1.webp'
   },
   {
     name: 'Pranjali Gurav',
     review: 'Loved the coaching style my son got while he was there for 6months . Now that we have relocated he misses the class daily. The coaches are very friendly and humble.An ideal place for juniors to develop the game👍🏻',
     star: 5,
-    image: '/assets/reviewer2.png'
+    image: '/assets/reviewer2.webp'
   },
   {
     name: 'Sandhya Kabra',
     review: 'Shaan, one of the best coach around. He not only trains you physically but mentally too. He shares his own personal experience/failures and how he overcame them. He gives you personal attention, helps you work on your skills, gives you personalised improvement techniques too. Highly recommended if you are looking for cricket coaching, not only for kids, but adults too.',
     star: 5,
-    image: '/assets/reviewer3.png'
+    image: '/assets/reviewer3.webp'
   },
   {
     name: 'Karunashankar Tiwari',
     review: 'I love that the coach at this accademy focuses on technique and fun equally. At grass root level if the emphasis of a coach is too much on the technique then the kids in the age group of 5-12 quickly loose interest in going to the academy. The drop out rate is higher on this age group. At limitLess cricket academy, Shaan ensures that each kid goes back with a smile on his face. He has a day wise plan chalked out which is a combination of fitness, skills and enjoyment while learning. Plenty of match simulation and practice match opportunities for all age groups. Special sessions with guest trainers certified from Mumbai Cricket Association.',
     star: 5,
-    image: '/assets/reviewer4.png'
+    image: '/assets/reviewer4.webp'
   },
   {
     name: 'Vikas Patel',
     review: 'Amazing coach Shaan bhai and best place to improve your cricket skills. I have joined corporate batch and results are very good. I have improved my physical strength and batting skills. I have also done the PT with Shaan bhai. Gives detailed information and explains everything. Always keeping eye on you and corrects the small small mistakes. Always on time and keeps you motivated. I will definitely recommend to join this.',
     star: 5,
-    image: '/assets/reviewer5.png'
+    image: '/assets/reviewer5.webp'
   },
   {
     name: 'Mahesh Thakur',
     review: 'The coach is an amazing person with great skill set and looks set for a good long haul. A overall good satisfying experience.',
     star: 5,
-    image: '/assets/reviewer6.png'
+    image: '/assets/reviewer6.webp'
   },
 ]

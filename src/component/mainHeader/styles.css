@@ -17,7 +17,7 @@
 .SwiperSlide1 {
     height: 70svh;
     width: 100%;
-    background-image: url("/assets/cricket_play_one.jpg");
+    background-image: url("/assets/cricket_play_one.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,7 +26,7 @@
 .SwiperSlide2 {
     height: 70svh;
     width: 100svw;
-    background-image: url("/assets/cricket_play_two2.jpg");
+    background-image: url("/assets/cricket_play_two2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +35,7 @@
 .SwiperSlide3 {
     height: 70svh;
     width: 100svw;
-    background-image: url("/assets/testing.jpg");
+    background-image: url("/assets/testing.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

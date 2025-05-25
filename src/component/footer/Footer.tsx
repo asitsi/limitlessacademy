@@ -15,7 +15,7 @@ const Footer: React.FC<ScrollButtonsProps> = ({ componentOneRef, componentTwoRef
                 <div className='container'>
                     <div className={styles['footer-container-row']}>
                         <div className={styles['footer-container-row-logo']}>
-                            <Image src='/assets/main_Logo.png' alt='Logo_image' height={340} className='h-[100px] w-[100px]'/>
+                            <Image src='/assets/main_Logo.webp' alt='Logo_image' height={340} className='h-[100px] w-[100px]'/>
                         </div>
                         <div>
                             <Heading text={"INFORMATION"} />

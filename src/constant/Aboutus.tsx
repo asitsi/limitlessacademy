@@ -14,7 +14,7 @@ const Aboutus = () => {
                         <Image
                             isZoomed
                             alt="NextUI hero Image"
-                            src="/assets/main_Logo.png"
+                            src="/assets/main_Logo.webp"
                             className='main_Image h-full w-full'
                         />
                     </div>

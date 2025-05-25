@@ -41,15 +41,15 @@ const TeamData = [
     certificate: true,
     exp: 12,
     coachExp: 7,
-    certificateImg: '/assets/certificate.png',
-    image: '/assets/shaan.png'
+    certificateImg: '/assets/certificate.webp',
+    image: '/assets/shaan.webp'
   },
   {
     name: 'AKASH AHIR',
     certificate: true,
     exp: 10,
     coachExp: 5,
-    certificateImg: '/assets/certificate.png',
-    image: '/assets/akashCanvatransparent.png'
+    certificateImg: '/assets/certificate.webp',
+    image: '/assets/akashCanvatransparent.webp'
   }
 ]
