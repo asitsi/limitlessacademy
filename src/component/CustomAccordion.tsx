@@ -15,7 +15,7 @@ interface AccordionProps {
     };
   
     return (
-      <div style={{ margin: '10px 0', width: '100%' }}>
+      <div className="my-[10px] w-full">
         <Card style={{ border: '1px solid #ddd', borderRadius: '8px', overflow: 'hidden', width: '100%' }}>
           <div
             onClick={toggleAccordion}
