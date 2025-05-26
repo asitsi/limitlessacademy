@@ -20,9 +20,9 @@ const Nav: React.FC<ScrollButtonsProps> = ({ componentOneRef, componentTwoRef, c
           <NavbarContent justify="end">
             <NavbarContent className="gap-4" justify="center">
               <NavbarItem>
-                <div onClick={() => scrollToComponent(componentOneRef)}>
+                <h1 onClick={() => scrollToComponent(componentOneRef)}>
                   HOME
-                </div>
+                </h1>
               </NavbarItem>
               <NavbarItem>
                 <div onClick={() => scrollToComponent(componentTwoRef)}>

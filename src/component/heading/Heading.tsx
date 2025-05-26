@@ -3,7 +3,7 @@ import styles from '@/styles/Heading.module.css'
 
 const Heading: React.FC<any> = ({text}) => {
   return (
-    <div className={`${styles.heading}`}>{text}</div>
+    <h1 className={`${styles.heading}`}>{text}</h1>
   )
 }
 
