@@ -230,4 +230,22 @@ body {
 .faq-container {
   font-family: "Open Sans", sans-serif;
 }
+
+.potfolio-image {
+  width: 100%!important;
+  height: 600px!important;
+  object-fit: cover!important;
+}
  
+.potfolio-image {
+  width: 100% !important;
+  height: 600px !important;
+  object-fit: cover !important;
+}
+
+@media (max-width: 768px) {
+  .potfolio-image {
+    height: auto!important;
+    object-fit: contain !important;
+  }
+}

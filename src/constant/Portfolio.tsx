@@ -1,7 +1,7 @@
 "use client"
 import Heading from '@/component/heading/Heading'
 import React from 'react'
-import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
 
 
 const Portfolio = () => {
@@ -19,12 +19,12 @@ const Portfolio = () => {
               <div key={index}>
                 <Image
                   alt="Card background"
-                  className="z-0 w-[100%] !h-[400px] contain"
+                  className="potfolio-image"
                   fallbackSrc={compImg}
                   src={image}
                   height={1440}
                   width={1080}
-                  style={{height: '600px', width: '100%'}}
+                // style={{height: '600px', width: '100%'}}
                 />
               </div>
             )
@@ -57,13 +57,13 @@ const Galery = () => {
               className="col-12 col-md-6 col-lg-6 col-xl-4"
               key={index}
             >
-                <Image
-                  isZoomed
-                  width={240}
-                  alt="NextUI Fruit Image with Zoom"
-                  src={image}
-                  className=''
-                />
+              <Image
+                isZoomed
+                width={240}
+                alt="NextUI Fruit Image with Zoom"
+                src={image}
+                className=''
+              />
             </div>
           );
         })}
@@ -100,6 +100,54 @@ const Data = [
   {
     id: 5,
     image: "/assets/image5.webp",
+    compImg: "/assets/com_image1.webp",
+    category: "CLUB",
+  },
+  {
+    id: 6,
+    image: "/assets/Image6.webp",
+    compImg: "/assets/com_image1.webp",
+    category: "CLUB",
+  },
+  {
+    id: 7,
+    image: "/assets/Image7.webp",
+    compImg: "/assets/com_image1.webp",
+    category: "CLUB",
+  },
+  {
+    id: 8,
+    image: "/assets/Image8.webp",
+    compImg: "/assets/com_image1.webp",
+    category: "CLUB",
+  },
+  {
+    id: 9,
+    image: "/assets/Image9.webp",
+    compImg: "/assets/com_image1.webp",
+    category: "CLUB",
+  },
+  {
+    id: 10,
+    image: "/assets/Image10.webp",
+    compImg: "/assets/com_image1.webp",
+    category: "CLUB",
+  },
+  {
+    id: 11,
+    image: "/assets/Image11.webp",
+    compImg: "/assets/com_image1.webp",
+    category: "CLUB",
+  },
+  // {
+  //   id: 12,
+  //   image: "/assets/Image12.webp",
+  //   compImg: "/assets/com_image1.webp",
+  //   category: "CLUB",
+  // },
+  {
+    id: 13,
+    image: "/assets/Image13.webp",
     compImg: "/assets/com_image1.webp",
     category: "CLUB",
   },
